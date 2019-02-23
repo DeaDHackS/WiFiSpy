@@ -26,14 +26,17 @@ Since its for linux, you cannot run it into a Windows machine or MacOS.
      - DETECT CLIENTS (COMING IN V.4 ;)), ESSID - NAME, BSSID - MAC ADDRESS, SECURITY TYPE, ENCRYPTED?
   
 # How-To-Use
-<p>
+```
 python3 wifispy.py
-</p>
+```
   
 # How-To-Install
-<p>
+```
+git clone https://github.com/DeaDHackS/WiFiSpy
+cd WiFiSpy
+chmod 777 -R *
 pip3 install -r requirements
-</p>
+```
   
 # Screenshots
 ![Example]()
