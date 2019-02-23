@@ -1,0 +1,4 @@
+optparse
+colorama
+scapy
+psutil
