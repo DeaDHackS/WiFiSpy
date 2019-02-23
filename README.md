@@ -15,6 +15,7 @@ Since its for linux, you cannot run it into a Windows machine or MacOS.
 ```
 aircrack-ng and its libraries (airodump-ng,aireplay-ng,airebase-ng etc...)
 pyrit (Optional)
+XTerm
 ```
 
 # Features
