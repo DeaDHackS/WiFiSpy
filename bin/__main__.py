@@ -8,9 +8,10 @@ import sys
 import datetime
 import random
 import time
+import requests
+import random
+import string
 
-
-# Creates a class for colors, i'm too lazy to use imported modules
 class color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
@@ -22,9 +23,9 @@ class color:
    RED = '\033[91m'
    BOLD = '\033[1m'
    UNDERLINE = '\033[4m'
+   ORANGE = '\033[33m'
    END = '\033[0m'
 
-# Aye man i'm too lazy ok? So i make functions to print the long shit lines ...
 def ERROR_print(msg):
     print(color.END+"["+color.RED+"x"+color.END+"]"+color.RED+" "+msg+color.CYAN)
 
@@ -42,7 +43,11 @@ def OVER_print(msg):
     sys.stdout.write("\033[K") #clear line
     print(msg)
 
-# Loading function
+VERSION = "V.1"
+
+def DIR_NAME(size=6, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
+
 def LOADING():
     print(r"""                                               
                                                               
@@ -84,7 +89,6 @@ oooo     oooo o88   ooooooooooo o88"""+color.RED+"""    oooooooo8"""+color.LIGHT
     else:
        os.system("clear") 
 
-
 def BANNER():
     print(r"""                                               
                                                               
@@ -98,9 +102,8 @@ oooo     oooo o88   ooooooooooo o88"""+color.RED+"""    oooooooo8"""+color.LIGHT
    [ Coded By Ghosty / DeaDHackS Team ]                       
    [ https://www.github.com/WiFiSpy ]
 """)
-      
-# Main function, so main menu
-def MAIN():
+
+def MAIN(VERSION):
     BANNER()
     print("\n\n")
     INFO_print("Enter '?' or 'help' to start off!")
@@ -117,6 +120,7 @@ def MAIN():
     ? - help             <*>    this menu
     credits              <*>    shows WiFiSpy credits
     version              <*>    displays exact version
+    check_update         <*>    check github for an update
     clear                <*>    clear screen
     exit                 <*>    exit WiFiSpy
 
@@ -132,6 +136,33 @@ def MAIN():
              
             if cmd_term == "version":
                 print("1.0 - First version ever made!")
+            
+            if cmd_term == "check_update":
+                r = requests.get("https://raw.githubusercontent.com/DeaDHackS/WiFiSpy/master/version")
+                r = r.content.decode("utf-8")
+                r = r.replace("\n", "")
+                r = r.replace("V.", "")
+                v = VERSION.replace("V.", "")
+                if int(r) > int(v):
+                    print("[*] GitHub Version: V."+str(r))
+                    print("[*] Current Version: "+VERSION)
+                    WARNING_print("Update is avalaible!")
+                    print("\n")
+                    update = input(color.END+"[?] Do you wish to update your WiFiSpy? [Y/N]: ")
+                    if update == "Y":
+                        DIR = DIR_NAME(5)
+                        os.system("cd && cd Desktop && mkdir {0} && cd {1} && git clone https://github.com/DeaDHackS/WiFiSpy".format(DIR, DIR))
+                        SUCCESS_print("WiFiSpy Downloaded At: /rppt/Desktop/"+DIR+"/WiFiSpy")
+                        SUCCESS_print("Done!")
+                elif int(r) < int(v):
+                    print("[*] GitHub Version: V."+str(r))
+                    print("[*] Current Version: "+VERSION)
+                    ERROR_print("How the? How do you have a bigger version than the GitHub? #Illuminati!")
+                elif int(r) == int(v):
+                    print("[*] GitHub Version: V."+str(r))
+                    print("[*] Current Version: "+VERSION)
+                    SUCCESS_print("No update avalaible!")
+              
              
             if cmd_term == "clear":
                 if "nt" in os.name:
@@ -157,4 +188,4 @@ def MAIN():
             exit()
 if __name__ == "__main__":
     LOADING()
-    MAIN()
+    MAIN(VERSION)
