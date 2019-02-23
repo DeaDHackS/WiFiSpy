@@ -23,8 +23,16 @@ Since its for linux, you cannot run it into a Windows machine or MacOS.
    - DEAUTH ATTACK
      - DETECT CLIENTS (COMING IN V.2 ;)), KICK MORE THAN 1 HOST
    - AP / WiFi SCANNER
-     - DETECT CLIENTS (COMING IN V.4 ;)), ESSID - NAME, BSSID - MAC ADDRESS, SECURITY TYPE, ENCRYPTED?
-  
+     - DETECT CLIENTS (COMING IN V.2 ;)), ESSID - NAME, BSSID - MAC ADDRESS, SECURITY TYPE, ENCRYPTED?
+
+# Incoming Features In WiFiSpy V.2
+```
+1 - Evil-Twin Attack Module
+2 - Client Detection (For Deauth and AP Scanner)
+3 - Automated Updating / Check Update Module
+4 - (MAYBE) +DNS SPOOF / SSLstrip (For Sniffers)
+```
+
 # How-To-Use
 ```
 python3 wifispy.py
