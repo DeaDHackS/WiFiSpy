@@ -9,6 +9,8 @@ import datetime
 import random
 import time
 
+
+# Creates a class for colors, i'm too lazy to use imported modules
 class color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
@@ -22,6 +24,7 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
 
+# Aye man i'm too lazy ok? So i make functions to print the long shit lines ...
 def ERROR_print(msg):
     print(color.END+"["+color.RED+"x"+color.END+"]"+color.RED+" "+msg+color.CYAN)
 
@@ -39,6 +42,7 @@ def OVER_print(msg):
     sys.stdout.write("\033[K") #clear line
     print(msg)
 
+# Loading function
 def LOADING():
     print(r"""                                               
                                                               
@@ -80,6 +84,7 @@ oooo     oooo o88   ooooooooooo o88"""+color.RED+"""    oooooooo8"""+color.LIGHT
     else:
        os.system("clear") 
 
+
 def BANNER():
     print(r"""                                               
                                                               
@@ -93,7 +98,8 @@ oooo     oooo o88   ooooooooooo o88"""+color.RED+"""    oooooooo8"""+color.LIGHT
    [ Coded By Ghosty / DeaDHackS Team ]                       
    [ https://www.github.com/WiFiSpy ]
 """)
-
+      
+# Main function, so main menu
 def MAIN():
     BANNER()
     print("\n\n")
@@ -149,16 +155,6 @@ def MAIN():
         except KeyboardInterrupt:
             print("\n[+] Quitting, bye-bye. Thanks for using WiFiSpy!")
             exit()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 if __name__ == "__main__":
     LOADING()
     MAIN()
