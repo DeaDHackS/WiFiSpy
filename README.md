@@ -1,5 +1,6 @@
-# WiFiSpy Description
+# WiFiSpy V.1 - First Version
 WiFiSpy is a tool written to automate powerful wifi / local attacks, with its nice user friendly console and easy-to-use, WiFiSpy can deliver a powerful ability to break in a network or even spy over a network!
+
 # Requirements!
 </p>
 WiFiSpy was developed and tested with python3 it will diffently not work with python2!
@@ -29,8 +30,9 @@ Since its for linux, you cannot run it into a Windows machine or MacOS.
 ```
 1 - Evil-Twin Attack Module
 2 - Client Detection (For Deauth and AP Scanner)
-3 - Automated Updating / Check Update Module
-4 - (MAYBE) +DNS SPOOF / SSLstrip (For Sniffers)
+3 - Spoof Mac (For Wireless Attacks)
+5 - Automated Updating / Check Update Module
+6 - (MAYBE) +DNS SPOOF / SSLstrip (For Sniffers)
 ```
 
 # How-To-Use
