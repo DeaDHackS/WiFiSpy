@@ -39,7 +39,16 @@ pip3 install -r requirements
 ```
   
 # Screenshots
-![Example]()
-![Example]()
-![Example]()
-![Example]()
+### The follow images are not how the script actually looks like, what i mean is that i cleared the screen to show the menus its self but when ran normally without running "clear" in the WiFiSpy console, a nice ASCII banner is there for you!
+
+## Main Menu 
+![Example](https://i.imgur.com/cpIXYhS.png)
+
+## Network Scan Menu
+![Example](https://i.imgur.com/0BNvAuX.png
+
+## Sniffers / Local Menu
+![Example](https://i.imgur.com/n0lSpG9.png)
+
+## Wireless Attacks Menu
+![Example](https://i.imgur.com/vemC6FN.png)
