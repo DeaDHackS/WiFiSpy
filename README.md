@@ -48,6 +48,7 @@ pyrit (Optional)
 6 - (MAYBE) +DNS SPOOF / SSLstrip (For Sniffers)
 7 - Kick Off Client(s) (For Local Attacks)
 8 - Hash Attack / Cracking Menu
+9 - Automated PMKID Capture!!!!
 ```
 
 # How-To-Use
