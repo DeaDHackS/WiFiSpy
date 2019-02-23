@@ -6,6 +6,10 @@ WiFiSpy is a tool written to automate powerful wifi / local attacks, with its ni
 WiFiSpy was developed and tested with python3 it will diffently not work with python2!
 Since its for linux, you cannot run it into a Windows machine or MacOS.
 </p>
+```
+Required tools:
+aircrack-ng and its libraries (airodump-ng,aireplay-ng,airebase-ng etc...)
+pyrit (Optional)
 
 # Features
 1. LOCAL ATTACKS
