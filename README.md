@@ -15,8 +15,11 @@ Since its for linux, you cannot run it into a Windows machine or MacOS.
      - RESOLVED DOMAINS
    - NETWORK SCAN
      - HOSTNAME, MAC ADDRESS, LOCAL IP
+   - WiFi STRIPER / CLIENT KICKER (COMING IN V.2)
+     - COMING IN V.2
 
 2. WIRELESS ATTACKS
+   - Spoof Mac (OPTIONS NOT ATTACK / COMING IN V.2 ;))
    - 4-WAYS-HANDSHAKE CAPTURE
      - DETECT CLIENTS, AUTOMATED HANDSHAKE CHECKER / SNOOPER, AUTO DEAUTHER (INCLUDED WiFiSpy OWN DEAUTH MODULE)
    - EVIL-TWIN - COMING IN V.2 ;)
@@ -29,10 +32,11 @@ Since its for linux, you cannot run it into a Windows machine or MacOS.
 # Incoming Features In WiFiSpy V.2
 ```
 1 - Evil-Twin Attack Module
-2 - Client Detection (For Deauth and AP Scanner)
+2 - Client Detection (For Deauth, Kick Off Client(s) And Scanner)
 3 - Spoof Mac (For Wireless Attacks)
 5 - Automated Updating / Check Update Module
 6 - (MAYBE) +DNS SPOOF / SSLstrip (For Sniffers)
+7 - Kick Off Client(s) (For Local Attacks)
 ```
 
 # How-To-Use
