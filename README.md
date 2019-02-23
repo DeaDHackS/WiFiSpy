@@ -43,6 +43,7 @@ pyrit (Optional)
 5 - Automated Updating / Check Update Module
 6 - (MAYBE) +DNS SPOOF / SSLstrip (For Sniffers)
 7 - Kick Off Client(s) (For Local Attacks)
+8 - Hash Attack / Cracking Menu
 ```
 
 # How-To-Use
