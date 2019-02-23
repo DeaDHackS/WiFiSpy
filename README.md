@@ -45,7 +45,7 @@ pip3 install -r requirements
 ![Example](https://i.imgur.com/cpIXYhS.png)
 
 ## Network Scan Menu
-![Example](https://i.imgur.com/0BNvAuX.png
+![Example](https://i.imgur.com/0BNvAuX.png)
 
 ## Sniffers / Local Menu
 ![Example](https://i.imgur.com/n0lSpG9.png)
