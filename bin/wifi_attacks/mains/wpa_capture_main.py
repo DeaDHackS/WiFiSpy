@@ -55,25 +55,22 @@ def MEMORY_CLEANUP(INTERFACE, BSSID, HANDSHAKE_CAPTURED, deauther, hs_checker, h
     for process_list in stdout:
        if '-title "Client Deauther - WiFiSpy Deauther V.1"' in process_list:
            CLEANED = process_list.split()
-           p = psutil.Process(int(CLEANED[1]))
            try:
-               p.terminate()
+               os.kill(int(CLEANED[1])
            except:
                pass
                print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1]))))
        if '-title "Handshake Checker - WiFiSpy V.1"' in process_list:
            CLEANED = process_list.split()
-           p = psutil.Process(int(CLEANED[1]))
            try:
-               p.terminate()
+               os.kill(int(CLEANED[1])
            except:
                pass
                print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1]))))
        if '-title "Access Point Sniffer - WiFiSpy V.1"' in process_list:
            CLEANED = process_list.split()
-           p = psutil.Process(int(CLEANED[1]))
            try:
-               p.terminate()
+               os.kill(int(CLEANED[1])
            except:
                pass
                print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1]))))
