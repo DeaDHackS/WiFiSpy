@@ -50,6 +50,7 @@ XTerm
 7 - Kick Off Client(s) (For Local Attacks)
 8 - Hash Attack / Cracking Menu
 9 - Automated PMKID Capture!!!!
+10 - Automated WPS Pixie-Dust Attack
 ```
 
 # How-To-Use
