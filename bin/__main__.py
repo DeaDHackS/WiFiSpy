@@ -59,7 +59,7 @@ oooo     oooo o88   ooooooooooo o88"""+color.RED+"""    oooooooo8"""+color.LIGHT
     8   8     o888o o888o       o888o"""+color.RED+""" o88oooo888  888ooo88      8888"""+color.CYAN+""" 
    [ WiFiSpy - V.1.0 ]                           """+color.RED+"""o888        o8o888"""+color.CYAN+"""    
    [ Coded By Ghosty / DeaDHackS Team ]                       
-   [ https://www.github.com/WiFiSpy ]
+   [ https://github.com/WiFiSpy ]
 """)
     LOADING_SECONDS = 10 
     while LOADING_SECONDS > 0:
@@ -100,7 +100,7 @@ oooo     oooo o88   ooooooooooo o88"""+color.RED+"""    oooooooo8"""+color.LIGHT
     8   8     o888o o888o       o888o"""+color.RED+""" o88oooo888  888ooo88      8888"""+color.CYAN+""" 
    [ WiFiSpy - V.1.0 ]                           """+color.RED+"""o888        o8o888"""+color.CYAN+"""    
    [ Coded By Ghosty / DeaDHackS Team ]                       
-   [ https://www.github.com/WiFiSpy ]
+   [ https://github.com/WiFiSpy ]
 """)
 
 def MAIN(VERSION):
