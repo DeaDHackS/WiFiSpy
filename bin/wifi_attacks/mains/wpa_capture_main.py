@@ -8,7 +8,6 @@ import random
 import time
 from multiprocessing import Process
 import subprocess
-import psutil
 import re
 
 class color:
@@ -56,24 +55,27 @@ def MEMORY_CLEANUP(INTERFACE, BSSID, HANDSHAKE_CAPTURED, deauther, hs_checker, h
        if '-title "Client Deauther - WiFiSpy Deauther V.1"' in process_list:
            CLEANED = process_list.split()
            try:
-               os.kill(int(CLEANED[1])
+               os.kill(int(CLEANED[1]))
            except:
                pass
-               print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1]))))
+               print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1])))
+               print(color.END)
        if '-title "Handshake Checker - WiFiSpy V.1"' in process_list:
            CLEANED = process_list.split()
            try:
-               os.kill(int(CLEANED[1])
+               os.kill(int(CLEANED[1]))
            except:
                pass
                print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1]))))
+               print(color.END)
        if '-title "Access Point Sniffer - WiFiSpy V.1"' in process_list:
            CLEANED = process_list.split()
            try:
-               os.kill(int(CLEANED[1])
+               os.kill(int(CLEANED[1]))
            except:
                pass
                print(WARNING_print("Could not kill one of the xterm windows 'PID: {0}' ...".format(str(CLEANED[1]))))
+               print(color.END)
     if HANDSHAKE_CAPTURED == True:
         os.system("mv {0}_CAPTURE-01.cap {1}_handshake.cap".format(BSSID, BSSID))
         os.system("mv {0}_handshake.cap /root/Desktop/".format(BSSID, BSSID))
