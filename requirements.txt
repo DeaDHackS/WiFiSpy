@@ -1,4 +1,3 @@
 optparse
 colorama
 scapy
-psutil
