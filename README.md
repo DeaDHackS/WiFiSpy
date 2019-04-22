@@ -1,6 +1,10 @@
 # WiFiSpy V.1 - First Version
 WiFiSpy is a tool written to automate powerful wifi / local attacks, with its nice user friendly console and easy-to-use, WiFiSpy can deliver a powerful ability to break in a network or even spy over a network!
 
+# CURRENT FIXING BUGS!
+Today (23/4/2019) i'm fixing some bugs i have found in the menus not staring modules.
+SO PLEASE WAIT AND IT WILL BE FIX IN THE NEXT HOUR(S)! ;D
+
 # IMPORTANT
 At 24/2/2019 - 8:52 AM I updated __main__.py to add a new command, called check_update!
 So no need to go on the page to check the news, simply do check_update and WiFiSpy will check for potential updates.
