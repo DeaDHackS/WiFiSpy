@@ -151,7 +151,7 @@ CHANNEL       Yes       {2}
                         monitor_quest = input("[?] Oh? Really? Please specifiy your new adapter: ")
                         INTERFACE = monitor_quest
                         
-                os.system("cd ../ && cd wpa_capture python3 wifi_jammer.py -i {0} -b {1} -c {2}".format(INTERFACE, TARGET_BSSID, CHANNEL))        
+                os.system("cd ../ && python3 wifi_jammer.py -i {0} -b {1} -c {2}".format(INTERFACE, TARGET_BSSID, CHANNEL))        
 
             if "show_info" in cmd_term:  
                 CLEANED = cmd_term.replace("show_info ", "")
