@@ -47,7 +47,8 @@ def OVER_print(msg):
         sys.stdout.write("\033[K") #clear line
         print(msg)
 
-interface=''
+global interface
+interface=sys.argv[1]
 nrml_ssid = ''
 aps = {}
 AP = []
@@ -105,13 +106,14 @@ def channel_hopper(channel):
             break
             exit()
 def signal_handler(signal, frame):
+    global interface
     p.terminate()
     p.join()
     monitor_quest = input("[?] Would you like to stop monitor mode? [Y/N]: ".format(INTERFACE))
             
     if monitor_quest == "Y" or monitor_quest == "y":
        print("[*] Yes? Ok stopping monitor mode for you ...")
-       NEW_INTERFACE = INTERFACE.replace("mon", "")
+       NEW_INTERFACE = interface.replace("mon", "")
        monitor_quest = input(color.END+"[?] Is your normal adapter '{0}'? [Y/N]: ".format(NEW_INTERFACE))
        if monitor_quest == "Y" or monitor_quest == "y":
           os.system("airmon-ng stop {0} >/dev/null 2>&1 &".format(INTERFACE))
@@ -120,6 +122,7 @@ def signal_handler(signal, frame):
     sys.exit(0)
 
 if __name__ == "__main__":
+    global interface
     if len(sys.argv) != 2:
         print("Usage %s monitor_interface" % sys.argv[0])
         sys.exit(1)
